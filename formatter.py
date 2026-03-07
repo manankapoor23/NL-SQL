@@ -1,8 +1,3 @@
-"""
-Slack Block Kit formatter.
-Turns query results into a clean, readable Slack message.
-"""
-
 
 def format_slack_response(
     question: str,
@@ -26,7 +21,7 @@ def format_slack_response(
         body = f"```{header}\n" + "\n".join(lines) + f"```\n{note}"
 
     return [
-        {"type": "section", "text": {"type": "mrkdwn", "text": f"*🤖 Query Results*\n> {question}"}},
+        {"type": "section", "text": {"type": "mrkdwn", "text": f"* Query Results*\n> {question}"}},
         {"type": "divider"},
         {"type": "section", "text": {"type": "mrkdwn", "text": body}},
         {"type": "divider"},
