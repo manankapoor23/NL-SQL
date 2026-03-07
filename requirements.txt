@@ -1,0 +1,5 @@
+slack-bolt==1.21.3
+langchain==1.2.10
+langchain-google-genai==4.2.1
+langchain-core==1.2.17
+python-dotenv==1.1.0
